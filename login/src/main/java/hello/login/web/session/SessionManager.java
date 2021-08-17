@@ -1,5 +1,6 @@
 package hello.login.web.session;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.UUID;
@@ -38,7 +39,10 @@ public class SessionManager {
         }
     }
 
+
     private Cookie findCookie(HttpServletRequest request, String cookieName) {
+
+String s = "";
         if (request.getCookies() == null) {
             return null;
         }
